@@ -3,10 +3,10 @@
     
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script type="text/javascript" src="/docs/learn.js"> </script>
+        <script type="text/javascript" src="../learn.js"> </script>
         <title>Portofolio</title>
-        <link rel="stylesheet" href="/docs/css/site.css">
-        <link rel="stylesheet" href="/docs/css/circleNav.css">
+        <link rel="stylesheet" href="../css/site.css">
+        <link rel="stylesheet" href="../css/circleNav.css">
        
         </head>
         <body class="altBg">
@@ -15,10 +15,11 @@
                 <div class="bar2"></div>    
                 <div class="bar3"></div>
                 <div class="links" id="myLinks">
-                        <a href="/docs/index.html">Home</a>
-                        <a href="#about" >About</a> 
-                        <a href="#contact" >Contact</a>
-                        <a href="/docs/pages/port.html" >Links</a>
+                        <a href="../index.html">Home</a>
+                        <div onclick="aboutText()"><a >About</a></div> 
+                        <div onclick="openForm()"><a >Contact</a></div>
+                        <a href="port.html" >Links</a>
+                       
                </div>
             </div>
             <div class="bgimg-2 "></div>
@@ -28,25 +29,39 @@
                     <label for="menu-toggler"></label>
                     <ul>
                       <li class="menu-item">
-                        <a class="" href="https://www.twitch.tv/dyldonius"><img src="/docs/pics/twitch-logo.webp"></a>
+                        <a class="" href="https://www.twitch.tv/dyldonius"><img src="../pics/twitch-logo.webp"></a>
                       </li>
                       <li class="menu-item">
-                        <a class="" href="https://www.youtube.com"><img src="/docs/pics/YouTube_full-color_icon_(2017).svg.png"></a>
+                        <a class="" href="https://www.youtube.com"><img src="../pics/YouTube_full-color_icon_(2017).svg.png"></a>
                       </li>
                       <li class="menu-item">
-                        <a class="" href="https://www.discord.com"><img src="/docs/pics/625e5fcef7ab80b8c1fe559e_Discord-Logo-Color.png"></a>
+                        <a class="" href="https://www.discord.com"><img src="../pics/625e5fcef7ab80b8c1fe559e_Discord-Logo-Color.png"></a>
                       </li>
                       <li class="menu-item">
-                        <a class=""href="https://www.facebook.com/dyl.runewicz.3"><img src="/docs/pics/4202110facebooklogosocialsocialmedia-115707_115594.png"></a>
+                        <a class=""href="https://www.facebook.com/dyl.runewicz.3"><img src="../pics/4202110facebooklogosocialsocialmedia-115707_115594.png"></a>
                       </li>
                       <li class="menu-item">
-                        <a class ="" href="https://www.instagram.com"><img src="/docs/pics/Instagram-Icon.png.webp"></a>
+                        <a class ="" href="https://www.instagram.com"><img src="../pics/Instagram-Icon.png.webp"></a>
                       </li>
                       <li class="menu-item">
                         <a class="" href="#"></a>
                       </li>
                     </ul>
                   </nav>
+                  <div class="form-popup" id="myForm">
+                    <form action="/action_page.php" class="form-container">
+                      <h1>Contact</h1>
+                  
+                      <label for="email"><b>Email</b></label>
+                      <input type="text" placeholder="Enter Email" name="email" required>
+                  
+                      <label for="freeform"><b>Inquire prices</b></label>
+                      <input type="text" placeholder="send me a message" name="freeform" rows="4" cols="50" required>
+                  
+                      <button type="submit" class="btn">submit</button>
+                      <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                    </form>
+                  </div>
             </div>
         </body>
     <footer>
