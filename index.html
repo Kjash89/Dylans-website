@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title>practice</title>
+        <link rel="stylesheet" href="css/site.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="learn.js"> </script>
+    </head>
+       
+        
+    <body>        
+      
+     
+     <div class="topNav"  onclick="myFunction(); myFunction2(this) "> 
+        <div class="bar1"></div>    
+        <div class="bar2"></div>    
+        <div class="bar3"></div>
+        <div class="links" id="myLinks">
+                <a href="index.html">Home</a>
+                <div onclick="aboutText()"><a >About</a></div> 
+            <div onclick="openForm()"><a  >Contact</a></div>
+                <a href="pages/port.html" >Links</a>
+       </div>
+    </div> 
+    
+          </div>
+          <div id="about" class="display-left" >
+            Dylan Runewicz
+          <br/><br> 
+            Musician/Writer/Nerd
+          </div>
+          
+            <div class="bgimg-1 " id="home" >
+            
+        </div>
+        <div>
+         
+
+<!-- The form -->
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Contact</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="freeform"><b>Inquire prices</b></label>
+    <input type="text" placeholder="send me a message" name="freeform" rows="4" cols="50" required>
+
+    <button type="submit" class="btn">submit</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+        </div>
+            
+<footer id="footer" >
+    
+</footer>
+
+</div>
+    
+
+           
+    </body>
+
+</html>
