@@ -14,19 +14,22 @@ body, html{
     font-size: 50px;
     font-family: 'papyrus', 'Arial Narrow', Arial, sans-serif;
     position:absolute;
-    top:50%;left:6%;
+    top:20%;left:6%;
     transform:translate(0%,-50%)
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 480px) {
     .display-left {
-        font-size: 5vw ;
+        font-size: 30px ;
+        font-style: bold;
+        font-weight: 500;
         position:absolute;
     }
     .disCenter{
         font-size: 5vw ;
         position:absolute;
     }
+  
 }
 
 
@@ -76,9 +79,7 @@ body, html{
      z-index: 1;
 
 }
-button{
-    
-}
+
 .topNav {
         
         overflow-x:hidden;
